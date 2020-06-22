@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProblemSolving\ProblemSolving.csproj" />
-    <ProjectReference Include="..\PuzzleEnvironment\PuzzleEnvironment.csproj" />
   </ItemGroup>
 
 </Project>

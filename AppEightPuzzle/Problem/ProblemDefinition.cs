@@ -1,9 +1,9 @@
-﻿using ProblemSolving;
+﻿using ProblemSolving.BySearching;
 using System.Collections.Generic;
 
-namespace SearchingApp.Problems.EightPuzzle
+namespace AppEightPuzzle.Problem
 {
-    public class ProblemDefinition<T> : IProblemDefinition<ProblemState<T>, ProblemAction>
+    public class ProblemDefinition<T> : ISearchProblem<ProblemState<T>, ProblemAction>
     {
         public ProblemState<T> InitialState { get; set; }
 
@@ -48,7 +48,7 @@ namespace SearchingApp.Problems.EightPuzzle
             return 1;
         }
 
-        public ProblemState<T> TransitionModel(ProblemState<T> state, ProblemAction action)
+        public ProblemState<T> Result(ProblemState<T> state, ProblemAction action)
         {
             var (rowNumber, columnNumber) = state.FindEmpty();
 

@@ -4,6 +4,6 @@ namespace ProblemSolving.BySearching
 {
     public interface ISearchStrategy<TState, TAction>
     {
-        SolutionSearchBase<TState, TAction> Search(IProblemDefinition<TState, TAction> problem);
+        SolutionSearchBase<TState, TAction> Search(ISearchProblem<TState, TAction> problem);
     }
 }

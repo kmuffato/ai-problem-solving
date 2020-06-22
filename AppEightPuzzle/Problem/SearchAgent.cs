@@ -1,12 +1,12 @@
 ﻿using ProblemSolving;
 using ProblemSolving.BySearching.Agent;
 using ProblemSolving.BySearching;
-using PuzzleEnvironment;
 using System;
+using AppEightPuzzle.Environment;
 
-namespace SearchingApp.Problems.EightPuzzle
+namespace AppEightPuzzle.Problem
 {
-    public class SearchAgent<T> : SimpleAgentBase<ProblemState<T>, ProblemAction>
+    public class SearchAgent<T> : SimpleProblemSolvingAgentBase<ProblemState<T>, ProblemAction>
         where T : IComparable<T>
     {
         public SearchAgent(
@@ -31,7 +31,7 @@ namespace SearchingApp.Problems.EightPuzzle
             return values.ToProblemState(state.GetLength(0), state.GetLength(1));
         }
 
-        protected override IProblemDefinition<ProblemState<T>, ProblemAction> FormulateProblem(
+        protected override ISearchProblem<ProblemState<T>, ProblemAction> FormulateProblem(
             ProblemState<T> state, ProblemState<T> goal)
         {
             return new ProblemDefinition<T>()

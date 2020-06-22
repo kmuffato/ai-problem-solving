@@ -1,10 +1,10 @@
-﻿using ProblemSolving.BySearching.Strategy;
-using PuzzleEnvironment;
-using SearchingApp.Problems.EightPuzzle;
+﻿using AppEightPuzzle.Environment;
+using AppEightPuzzle.Problem;
+using ProblemSolving.BySearching.Strategy;
 using System;
 using System.Linq;
 
-namespace SearchingApp
+namespace AppEightPuzzle
 {
     class Program
     {
@@ -61,7 +61,7 @@ namespace SearchingApp
             while ((action = agent.Work(environment.State)) != default)
             {
                 var newState = agent.Problem
-                    .TransitionModel(environment.State.ToProblemState(), action)
+                    .Result(environment.State.ToProblemState(), action)
                     .ToPuzzleBoard();
 
                 environment = new PuzzleEnvironment<int>(newState);

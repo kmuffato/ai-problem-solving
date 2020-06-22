@@ -29,17 +29,5 @@
         {
             return new Node<TState, TAction>(state, default, default, default);
         }
-
-        public static Node<TState, TAction> ChildNode(
-            IProblemDefinition<TState, TAction> problem,
-            Node<TState, TAction> parent,
-            TAction action)
-        {
-            return new Node<TState, TAction>(
-                problem.TransitionModel(parent.State, action),
-                parent,
-                action,
-                parent.PathCost + problem.StepCost(parent.State, action));
-        }
     }
 }

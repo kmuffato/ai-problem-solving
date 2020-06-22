@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace SearchingApp.Problems.EightPuzzle
+namespace AppEightPuzzle.Problem
 {
     public class ProblemState<T> : IEquatable<ProblemState<T>>
     {

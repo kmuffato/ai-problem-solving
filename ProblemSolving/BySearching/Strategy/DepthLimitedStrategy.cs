@@ -11,13 +11,13 @@ namespace ProblemSolving.BySearching.Strategy
 
         public int Limit { get; }
 
-        public SolutionSearchBase<TState, TAction> Search(IProblemDefinition<TState, TAction> problem)
+        public SolutionSearchBase<TState, TAction> Search(ISearchProblem<TState, TAction> problem)
         {
             return RecursiveDLS(Node<TState, TAction>.Root(problem.InitialState), problem, Limit);
         }
 
         private SolutionSearchBase<TState, TAction> RecursiveDLS(
-            Node<TState, TAction> node, IProblemDefinition<TState, TAction> problem, int limit)
+            Node<TState, TAction> node, ISearchProblem<TState, TAction> problem, int limit)
         {
             if (problem.GoalTest(node.State))
             {
@@ -35,7 +35,7 @@ namespace ProblemSolving.BySearching.Strategy
 
                 foreach (var action in actions)
                 {
-                    var child = Node<TState, TAction>.ChildNode(problem, node, action);
+                    var child = NodeExtensions.ChildNode(problem, node, action);
 
                     var result = RecursiveDLS(child, problem, limit - 1);
 

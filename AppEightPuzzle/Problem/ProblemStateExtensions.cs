@@ -1,7 +1,7 @@
-﻿using PuzzleEnvironment;
+﻿using AppEightPuzzle.Environment;
 using System;
 
-namespace SearchingApp.Problems.EightPuzzle
+namespace AppEightPuzzle.Problem
 {
     public static class ProblemStateExtensions
     {

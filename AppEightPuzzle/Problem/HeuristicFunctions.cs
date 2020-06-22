@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SearchingApp.Problems.EightPuzzle
+namespace AppEightPuzzle.Problem
 {
     class HeuristicFunctions
     {
@@ -51,14 +51,13 @@ namespace SearchingApp.Problems.EightPuzzle
             return totalDist;
         }
 
-
         public static double ManhattanDistance(
             (int x1, int x2) srcPiece, (int x1, int x2) destPiece)
         {
-            var euclidienMetric = Math.Abs(destPiece.x1 - srcPiece.x1) +
+            var manhattanMetric = Math.Abs(destPiece.x1 - srcPiece.x1) +
                 Math.Abs(destPiece.x2 - srcPiece.x2);
 
-            return euclidienMetric;
+            return manhattanMetric;
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace ProblemSolving
+﻿namespace ProblemSolving.BySearching
 {
-    public interface IProblemDefinition<TState, TAction>
+    public interface ISearchProblem<TState, TAction>
     {
         TState InitialState { get; set; }
 
@@ -12,6 +12,6 @@
 
         double StepCost(TState state, TAction action);
 
-        TState TransitionModel(TState state, TAction action);
+        TState Result(TState state, TAction action);
     }
 }

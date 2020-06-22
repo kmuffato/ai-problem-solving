@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchingApp", "SearchingApp\SearchingApp.csproj", "{1E31FE1F-B77A-41A2-9204-497444D0CE3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemSolving", "ProblemSolving\ProblemSolving.csproj", "{4A41AC7D-9AD3-4198-9D62-33D790064AD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemSolving", "ProblemSolving\ProblemSolving.csproj", "{4A41AC7D-9AD3-4198-9D62-33D790064AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppEightPuzzle", "AppEightPuzzle\AppEightPuzzle.csproj", "{39A168B3-1B35-49AF-9FC5-3A508BEB8BA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleEnvironment", "PuzzleEnvironment\PuzzleEnvironment.csproj", "{77D28910-D10D-4AF0-AF56-9FDF6C163B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppTicTacToe", "AppTicTacToe\AppTicTacToe.csproj", "{B7035694-ECD8-4220-B321-130483EF161A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E31FE1F-B77A-41A2-9204-497444D0CE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E31FE1F-B77A-41A2-9204-497444D0CE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E31FE1F-B77A-41A2-9204-497444D0CE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E31FE1F-B77A-41A2-9204-497444D0CE3B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A41AC7D-9AD3-4198-9D62-33D790064AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A41AC7D-9AD3-4198-9D62-33D790064AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A41AC7D-9AD3-4198-9D62-33D790064AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A41AC7D-9AD3-4198-9D62-33D790064AD3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77D28910-D10D-4AF0-AF56-9FDF6C163B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77D28910-D10D-4AF0-AF56-9FDF6C163B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77D28910-D10D-4AF0-AF56-9FDF6C163B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77D28910-D10D-4AF0-AF56-9FDF6C163B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A168B3-1B35-49AF-9FC5-3A508BEB8BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A168B3-1B35-49AF-9FC5-3A508BEB8BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A168B3-1B35-49AF-9FC5-3A508BEB8BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A168B3-1B35-49AF-9FC5-3A508BEB8BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7035694-ECD8-4220-B321-130483EF161A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7035694-ECD8-4220-B321-130483EF161A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7035694-ECD8-4220-B321-130483EF161A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7035694-ECD8-4220-B321-130483EF161A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

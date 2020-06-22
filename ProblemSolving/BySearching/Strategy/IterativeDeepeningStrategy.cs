@@ -5,7 +5,7 @@ namespace ProblemSolving.BySearching.Strategy
     public class IterativeDeepeningStrategy<TState, TAction>
         : ISearchStrategy<TState, TAction>
     {
-        public SolutionSearchBase<TState, TAction> Search(IProblemDefinition<TState, TAction> problem)
+        public SolutionSearchBase<TState, TAction> Search(ISearchProblem<TState, TAction> problem)
         {
             for (int i = 0; i < int.MaxValue; i++)
             {

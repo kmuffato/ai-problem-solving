@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace ProblemSolving.BySearching.Agent
 {
-    public abstract class SimpleAgentBase<TState, TAction>
+    public abstract class SimpleProblemSolvingAgentBase<TState, TAction>
         where TAction : IEquatable<TAction>
     {
-        protected SimpleAgentBase(ISearchStrategy<TState, TAction> searchStrategy)
+        protected SimpleProblemSolvingAgentBase(ISearchStrategy<TState, TAction> searchStrategy)
         {
             SearchStrategy = searchStrategy;
         }
@@ -17,7 +17,7 @@ namespace ProblemSolving.BySearching.Agent
 
         public TState Goal { get; set; }
 
-        public IProblemDefinition<TState, TAction> Problem { get; set; }
+        public ISearchProblem<TState, TAction> Problem { get; set; }
 
         public ISearchStrategy<TState, TAction> SearchStrategy { get; }
 
@@ -50,9 +50,9 @@ namespace ProblemSolving.BySearching.Agent
 
         protected abstract TState FormulateGoal(TState state);
 
-        protected abstract IProblemDefinition<TState, TAction> FormulateProblem(TState state, TState goal);
+        protected abstract ISearchProblem<TState, TAction> FormulateProblem(TState state, TState goal);
 
-        protected virtual List<TAction> Search(IProblemDefinition<TState, TAction> problem)
+        protected virtual List<TAction> Search(ISearchProblem<TState, TAction> problem)
         {
             var solution = SearchStrategy.Search(problem);
 

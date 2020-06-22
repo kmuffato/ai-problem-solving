@@ -1,8 +1,8 @@
-﻿using ProblemSolving.BySearching.Returns;
-using ProblemSolving.BySearching.Strategy.Utilities;
+﻿using ProblemSolving.BySearching.Strategy.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ProblemSolving.BySearching.Returns;
 
 namespace ProblemSolving.BySearching.Strategy
 {
@@ -15,7 +15,7 @@ namespace ProblemSolving.BySearching.Strategy
         private readonly EqualityComparer<TState> sComparer
             = EqualityComparer<TState>.Default;
 
-        public SolutionSearchBase<TState, TAction> Search(IProblemDefinition<TState, TAction> problem)
+        public SolutionSearchBase<TState, TAction> Search(ISearchProblem<TState, TAction> problem)
         {
             var rootNode = Node<TState, TAction>.Root(problem.InitialState);
 
@@ -40,7 +40,7 @@ namespace ProblemSolving.BySearching.Strategy
 
                 foreach (var action in actions)
                 {
-                    var child = Node<TState, TAction>.ChildNode(problem, node, action);
+                    var child = NodeExtensions.ChildNode(problem, node, action);
 
                     bool containsState = explored.Contains(child.State)
                         || frontier.Contains(child, nComparer);

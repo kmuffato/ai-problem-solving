@@ -1,4 +1,4 @@
-﻿namespace PuzzleEnvironment
+﻿namespace AppEightPuzzle.Environment
 {
     public class PuzzleBoard<T>
     {
