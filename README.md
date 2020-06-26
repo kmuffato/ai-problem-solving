@@ -12,3 +12,5 @@ https://ysfuz.com/2020/05/25/8-puzzle-game-problem-solving-components/
 https://ysfuz.com/2020/05/27/uninformed-search-strategies/
 
 https://ysfuz.com/2020/05/29/informed-search-strategies/
+
+https://ysfuz.com/2020/06/23/an-outlook-into-adversarial-search-problems/
